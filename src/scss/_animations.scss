@@ -1,0 +1,104 @@
+@keyframes pulse {
+    from {
+        box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.6);
+        background: rgba(255, 255, 255, 0.6);
+    }
+    to {
+        box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0);
+        background: rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes openTop {
+    0% {
+        transform: 
+            translateY(-5px)
+            rotate(0deg);
+    }
+    50% {
+        transform: 
+            translateY(0px)
+            rotate(0deg);
+    }
+    100% {
+        transform: 
+            translateY(0px)
+            rotate(90deg); // '45deg' * 2
+    }
+}
+
+@keyframes closedTop {
+    0% {
+        transform: 
+            translateY(-5px)
+            rotate(0deg);
+    }
+    50% {
+        transform: 
+            translateY(0px)
+            rotate(0deg);
+    }
+    100% {
+        transform: 
+            translateY(0px)
+            rotate(90deg); // '45deg' * 2
+    }
+}
+
+@keyframes openMid {
+    50% {
+        transform: 
+            rotate(0deg);
+    }
+    100% {
+        transform: 
+            rotate(45deg); // Turns the '+' to an 'x'
+    }
+}
+
+@keyframes closedMid {
+    50% {
+        transform: 
+            rotate(0deg);
+    }
+    100% {
+        transform: 
+            rotate(45deg); // Turns the '+' to an 'x'
+    }
+}
+
+@keyframes openBottom {
+    0% {
+        transform: 
+            translateY(5px)
+            rotate(0deg);
+    }
+    50% {
+        transform: 
+            translateY(0px)
+            rotate(0deg);
+    }
+    100% {
+        transform: 
+            translateY(0px)
+            rotate(90deg); // '45deg' * 2
+    }
+}
+
+@keyframes closedBottom {
+    0% {
+        transform: 
+            translateY(5px)
+            rotate(0deg);
+    }
+    50% {
+        transform: 
+            translateY(0px)
+            rotate(0deg);
+    }
+    100% {
+        transform: 
+            translateY(0px)
+            rotate(90deg); // '45deg' * 2
+    }
+}

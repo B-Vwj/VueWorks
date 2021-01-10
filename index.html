@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Brandon's Portfolio Website</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
     <!-- LOCAL -->
     <link rel="stylesheet" href="./src/scss/main.css">
 </head>
@@ -45,23 +46,40 @@
             </header>
 
             <div class="hero">
-                <h1>Hello, I'm <span class="highlighted">Brandon Vue</span>. <br/> A Junior Developer.</h1>
-                <div class="buttons">
+                <h1>Hello, I'm <span class="highlighted">Brandon Vue</span>. <br/> Software Developer.</h1>
+                <!-- <div class="buttons">
                     <div class="button about-me" dest="about"><a href="#about-content">About Me</a></div>
                     <div class="button view-my-work" dest="portfolio"><a href="#portfolio-content">Portfolio</a></div>
-                </div>
+                </div> -->
             </div>
 
             <!-- Content Section -->
             <main class="container" id="main-container">
-                <section class="about-section grid">
-                    <div class="about-content flex">
-                        <div class="name-and-title">
-                            <h2>Brandon Vue</h2>
-                            <p>Junior Developer</p>
-                        </div>
-                        <div class="description">
-                            <p>Hello all! I am Brandon Vue, and I'm currently persuing a B.s. Computer Science and have interned at Target Corporation.</p>
+                <section class="about-section">
+                    <div id="about-content">
+
+                        <!-- Header -->
+                        <h1>Tools Under My Belt</h1>
+
+                        <!-- JS Marquee Effect  -->
+                        <div class="js-marquee">
+                            <div class="marquee-content">
+                                <li><a href="https://en.wikipedia.org/wiki/HTML5"><i class="fab fa-html5"></i></a></li>
+                                <li><a href="https://en.wikipedia.org/wiki/CSS"><i class="fab fa-css3-alt"></i></a></li>
+                                <li><a href="https://en.wikipedia.org/wiki/JavaScript"><i class="fab fa-js-square"></i></a></li>
+                                <li><a href="https://www.markdownguide.org/"><i class="fab fa-markdown"></i></a></li>
+                                <li><a href="https://github.com/B-Vwj"><i class="fab fa-github"></i></a></li>
+                                <li><a href="https://en.wikipedia.org/wiki/Java_(programming_language)"><i class="fab fa-java"></i></a></li>
+                                <li><a href="https://en.wikipedia.org/wiki/Python_(programming_language)"><i class="fab fa-python"></i></a></li>
+                                <li><a href="https://getbootstrap.com/"><i class="fab fa-bootstrap"></i></a></li>
+                                <li><a href="https://reactjs.org/"><i class="fab fa-react"></i></a></li>
+
+                                <!-- Duplicates -->
+                                <li><i class="fab fa-html5"></i></li>
+                                <li><i class="fab fa-css3-alt"></i></li>
+                                <li><i class="fab fa-js-square"></i></li>
+                                <li><i class="fab fa-markdown"></i></li>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -83,16 +101,16 @@
         </div>
 
         <footer>
-            <div class="icon-wrap">
-                <a href="https://www.linkedin.com/in/young-professional-brandon-vue/">
-                <div id="icon"></div>
-                </a>
-            </div>
             <div class="info-box">
                 <div class="footnote">
                     Brandon Vue <span class="highlighted">©2020</span>
                 </div>
             </div>
+            <!-- <div class="icon-wrap">
+                <a href="https://www.linkedin.com/in/young-professional-brandon-vue/">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div> -->
         </footer>
 
     </div>

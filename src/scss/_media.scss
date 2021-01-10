@@ -15,7 +15,7 @@
             }
 
             &::after {
-                animation: closedTop .8s backwards;
+                animation: closedBottom .8s backwards;
                 animation-direction: reverse;
             }
         }
@@ -106,15 +106,21 @@
     }
 }
 
-@media screen and (max-width: 582px) {
+@media screen and (max-width: 584px) {
     .hero {
-        .button {
-            margin: 15px;
-            padding: 15px 15px;
-        }
 
         h1 {
             font-size: 1.63rem;
         }
     }
-} 
+}
+
+@media screen and (max-width: 498px) {
+    .hero {
+        
+        h1 {
+            font-size: 1.3rem;
+        }
+
+    }
+}

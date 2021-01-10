@@ -1,3 +1,12 @@
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-180vw);
+    }
+}
+
 @keyframes pulse {
     from {
         box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.6);

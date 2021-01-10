@@ -46,33 +46,33 @@
         }
     }
 
-    .buttons {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+    // .buttons {
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-evenly;
+    // }
 
-    .button {
-        cursor: pointer;
-        margin: 25px;
-        padding: 15px 20px;
-        border: #fff 3px solid;
-        display: inline-block;
-        box-sizing: inherit;
-    }
+    // .button {
+    //     cursor: pointer;
+    //     margin: 25px;
+    //     padding: 15px 20px;
+    //     border: #fff 3px solid;
+    //     display: inline-block;
+    //     box-sizing: inherit;
+    // }
 
-    .view-my-work, .about-me {
-        font-size: 1.5rem;
-        transition: all;
-            transition-property: all;
-            transition-duration: 0.5s;
-            transition-timing-function: ease;
-            transition-delay: 0s;
+    // .view-my-work, .about-me {
+    //     font-size: 1.3rem;
+    //     transition: all;
+    //         transition-property: all;
+    //         transition-duration: 0.5s;
+    //         transition-timing-function: ease;
+    //         transition-delay: 0s;
 
-        &:hover {
-            background: #e31b6d; //#04c2c9
-            border-color: #e31b6d;//#04c2c9
-        }
-    }
+    //     &:hover {
+    //         background: #e31b6d; //#04c2c9
+    //         border-color: #e31b6d;//#04c2c9
+    //     }
+    // }
 
 }

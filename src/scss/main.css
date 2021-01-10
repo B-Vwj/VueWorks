@@ -55,48 +55,6 @@
   border-radius: 6px 0 0 0;
 }
 
-.hero .buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.hero .button {
-  cursor: pointer;
-  margin: 25px;
-  padding: 15px 20px;
-  border: #fff 3px solid;
-  display: inline-block;
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-.hero .view-my-work, .hero .about-me {
-  font-size: 1.5rem;
-  -webkit-transition: all;
-  transition: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-}
-
-.hero .view-my-work:hover, .hero .about-me:hover {
-  background: #e31b6d;
-  border-color: #e31b6d;
-}
-
 .main-header {
   position: fixed;
   display: -webkit-box;
@@ -248,8 +206,8 @@
     animation-direction: reverse;
   }
   .main-header .menu-icon::after {
-    -webkit-animation: closedTop .8s backwards;
-            animation: closedTop .8s backwards;
+    -webkit-animation: closedBottom .8s backwards;
+            animation: closedBottom .8s backwards;
     animation-direction: reverse;
   }
   .main-header .nav-links {
@@ -346,13 +304,37 @@
   }
 }
 
-@media screen and (max-width: 582px) {
-  .hero .button {
-    margin: 15px;
-    padding: 15px 15px;
-  }
+@media screen and (max-width: 584px) {
   .hero h1 {
     font-size: 1.63rem;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .hero h1 {
+    font-size: 1.3rem;
+  }
+}
+
+@-webkit-keyframes scrolling {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-180vw);
+            transform: translateX(-180vw);
+  }
+}
+
+@keyframes scrolling {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-180vw);
+            transform: translateX(-180vw);
   }
 }
 
@@ -549,7 +531,7 @@
 footer {
   background: rgba(0, 0, 0, 0.9);
   color: #fff;
-  height: 5vh;
+  height: 7vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,22 +544,66 @@ footer {
           align-items: center;
 }
 
-#main-container {
-  width: 100vw;
+.container {
   text-align: center;
 }
 
-#main-container p {
+.container h1, .container p {
   margin: 1.3rem;
 }
 
-.about-section {
-  background-color: #e6e6e6;
-  padding: 3rem;
+.container .about-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #919198;
+  padding: 1.3rem;
 }
 
-.about-section .about-content .description {
-  background-color: #e6e6e6;
+.container .about-section .js-marquee {
+  overflow: hidden;
+  width: 80vw;
+  height: 20vh;
+  background-color: #919194;
+  position: relative;
+}
+
+.container .about-section .marquee-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  height: 100%;
+  -webkit-animation: scrolling 10s linear infinite;
+          animation: scrolling 10s linear infinite;
+}
+
+.container .about-section .marquee-content li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  font-size: 5rem;
+  white-space: nowrap;
+}
+
+.container .about-section .marquee-content:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 *, *::before, *::after {
@@ -588,7 +614,7 @@ footer {
 }
 
 body {
-  font-family: 'Monserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body .highlighted {

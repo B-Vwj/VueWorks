@@ -10,10 +10,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    // width: 100%;
+    // overflow-x: hidden;
 }
 
 body {
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
     // Name
     .highlighted {
@@ -25,14 +27,4 @@ body {
         color: inherit;
         text-transform: uppercase;
     }
-
-    // .grid {
-    //     display: grid;
-    // }
-
-    // .flex {
-    //     display: flex;
-    // }
 }
-
-// .container {}

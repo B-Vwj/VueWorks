@@ -1,47 +1,64 @@
-#main-container {
-    width: 100vw;
+.container {
     text-align: center;
 
-    p {
-        // display: flex;
-        // align-self: initial;
+    h1, p {
         margin: 1.3rem;
     }
-}
 
-.about-section {
-    background-color: rgb(230, 230, 230);
-    padding: 3rem;
+    .about-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #919198;
+        padding: 1.3rem;
 
-    // display: grid;
-    // grid-template-columns: 1fr auto 1fr;
-    // grid-template-rows: repeat(1, 5vh);
-    // gap: 0;
+        .js-marquee {
+            overflow: hidden;
+            width: 80vw;
+            height: 20vh;
+            background-color: #919194;
+            position: relative;
+        }
 
-    .about-content {
-        // width: 80%;
-        // margin: .15% 0;
-    
-        // display: flex;
-        // flex-direction: column;
-        // justify-self: center;
-        // align-self: center;
-
-        // .name-and-title {
+        // .js-marquee::before, .js-marquee::after {
         //     position: absolute;
-        //     display: flex;
-        //     justify-self: center;
-        //     align-self: center;
-
-        //     grid-column: 1/2;
-        //     grid-row: 1/2;
+        //     top: 0;
+        //     width: 10rem;
+        //     height: 100%;
+        //     content: "";
+        //     z-index: 1;
         // }
+
+        // .js-marquee::before {
+        //     left: 0;
+        //     background: linear-gradient(to right, #919199 0%, transparent 100%);
+        // }
+        
+        // .js-marquee::after {
+        //     right: 0;
+        //     background: linear-gradient(to left, #919199 0%, transparent 100%);
+        // }
+
+        .marquee-content {
+            display: flex;
+            list-style: none;
+            height: 100%;
+            animation: scrolling 10s linear infinite;
     
-        .description {
-            background-color: rgb(230, 230, 230);
-        //     position: relative;
-        //     grid-column: 2/3;
-        //     grid-row: 1/2;
+            li {
+                // border: 3px solid teal;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20vw;
+                flex-shrink: 0;
+                font-size: 5rem;
+                white-space: nowrap;
+            }
+        }
+
+        .marquee-content:hover {
+            animation-play-state: paused;
         }
     }
 }

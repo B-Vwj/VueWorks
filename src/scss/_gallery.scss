@@ -1,0 +1,35 @@
+.portfolio-section {
+    max-width: 1200px;
+    margin: auto;
+
+    .row {
+        margin: 0px -18px; 
+        padding: 8px;
+
+        .column {
+            padding: 6px;
+            float: left; 
+            width: 25%;
+
+            img {
+                border: 2px solid black;
+            }
+
+            .content { 
+                background-color: white; 
+                padding: 10px; 
+                border: 1px solid gray;
+
+                p {
+                    overflow: hidden;
+                }
+            } 
+        }
+    }
+
+    .row:after { 
+        content: ""; 
+        display: table; 
+        clear: both; 
+    }
+}

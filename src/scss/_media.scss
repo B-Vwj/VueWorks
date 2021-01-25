@@ -124,3 +124,17 @@
 
     }
 }
+
+// Portfolio Gallery
+
+@media screen and (max-width: 850px) { 
+    .column { 
+        width: 50%; 
+    } 
+}
+
+@media screen and (max-width: 400px) { 
+    .column { 
+        width: 100%; 
+    } 
+}
